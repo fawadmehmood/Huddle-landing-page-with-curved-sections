@@ -52,11 +52,13 @@ body{
 /* === start of hero === */
 
 .header{
-    padding-top: 4.5rem;
-    padding-bottom: 4.5rem;
+    /* padding-top: 4.5rem;
+    padding-bottom: 4.5rem; */
 }
 
 .header__content{
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
     justify-content: space-between;
     align-items: center;
 }
@@ -91,7 +93,7 @@ body{
     color: white;
 }
 
-.hero{
+.hero__content{
     padding-top: 4.5rem;
     padding-bottom: 4.5rem;
 }
@@ -131,7 +133,7 @@ body{
 }
 
 .hero__img{ 
-    margin: 2rem 0rem;
+    margin-top: 2rem;
 }
 
 .hero__img img{
@@ -143,6 +145,32 @@ body{
 /* === end of hero === */
 
 
+/* === start of numbers === */
+      .numbers__content{
+          padding-top: 4rem;
+          padding-bottom: 4rem;
+          justify-content: space-around;
+      }
+
+      .numbers__detail{
+          flex-direction: column;
+          align-items: center;
+          padding: 4rem 0;
+      }
+      .numbers__detail img{
+          align-self: flex-start;
+              max-width: 3.5rem;
+      }
+
+      .numbers__detail h2{
+        font-size: clamp(5rem, 5vw, 7rem);
+      }
+
+      .numbers__detail span{
+        font-size: clamp(1.4rem, 1.5vw, 1.6rem);
+          color: gray;
+      }
+/* === start of numbers === */
 
 
 @media screen and (max-width: 1200px) {
@@ -165,17 +193,28 @@ body{
      }      
 
      /* === start of hero === */
+
     .header__btn{
                 font-size: 1.4rem;
                 padding: 0.3rem 2rem;
             }
     
     .hero__img{
-        margin: 4rem 0rem;
-    }        
+        margin-top: 4rem;
+    }       
+
+    /* === end of hero === */
+ 
+
+    
+    /* === start of numbers === */
+     .numbers__content{
+         flex-direction: column;
+         align-items: center;
+     }     
+    /* === end of numbers === */
             
       }
-      /* === end of hero === */
 
 
    @media screen and (max-width: 480px) {
