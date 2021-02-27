@@ -22,7 +22,7 @@ html{
 }
 
 body{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -112,6 +112,7 @@ body{
 .hero__text p{
     max-width: 55rem;
     margin: 3rem auto;
+    font-size: 1.8rem;
 }
 
 .heading{
@@ -146,9 +147,17 @@ body{
 
 
 /* === start of numbers === */
+
+     .numbers{
+         background-image: url('images/bg-section-top-desktop-1.svg');
+         background-repeat: no-repeat;
+         background-position: bottom;
+         background-size: contain;
+     }
+
       .numbers__content{
           padding-top: 4rem;
-          padding-bottom: 4rem;
+          padding-bottom: 18rem;
           justify-content: space-around;
       }
 
@@ -170,7 +179,85 @@ body{
         font-size: clamp(1.4rem, 1.5vw, 1.6rem);
           color: gray;
       }
-/* === start of numbers === */
+/* === end of numbers === */
+
+
+/* === start of info === */
+
+
+/* === start of info-1 === */
+.info{
+         background-color: var(--Very-Pale-Blue);
+     }
+
+     .info__wrapper{
+        width: 90%;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        gap: 8rem;
+     }
+
+     .info__text, .info__img__wrapper{
+         flex-basis: 100%;
+     }
+
+     .info__text p{
+        font-size: clamp(1.4rem, 1.5vw, 1.6rem);
+        margin: 1rem 0;
+     }
+
+     .info__img__wrapper img{
+         max-width: 100%;
+         display: block;
+     }
+  /* === end of info-1 === */
+   
+
+  /* === start of info-2 === */
+       
+     .info-2{
+         background:  url('images/bg-section-bottom-desktop-1.svg'), url('images/bg-section-top-desktop-2.svg'), white;
+         background-repeat: no-repeat;
+         background-position: top, bottom;
+         background-size: contain;
+     }
+
+     .info__wrapper-2{
+         padding-top: 28rem;
+         padding-bottom: 25rem;
+     }
+
+     .info__wrapper-2 .info__text{
+         order: 1;
+     }
+      
+  /* === end of info-2 === */
+
+
+
+/* === end of info === */
+
+
+/* === start of cta === */
+
+  .cta{
+      background: url('images/bg-section-bottom-desktop-2.svg'), url('images/bg-footer-top-desktop.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: top, bottom;
+  }
+
+   .cta__content{
+       padding-top: 25rem;
+       padding-bottom: 25rem;
+       text-align: center;
+   }
+   
+   .cta__content h2{
+       font-size: clamp(2.5rem , 3vw, 3.5rem);
+       margin-bottom: 3rem;
+   }
+/* === end of cta === */
 
 
 @media screen and (max-width: 1200px) {
@@ -183,7 +270,60 @@ body{
      }
      
    @media screen and (max-width: 768px) {
-                   
+         
+    
+/* === start of numbers === */
+ 
+    .numbers{
+              background-image: url('images/bg-section-top-mobile-1.svg');
+          }
+
+          .numbers__content{
+            padding-bottom: 10rem;
+          }
+
+/* === end of numbers === */
+
+
+
+/* === start of info === */
+
+     .info__wrapper{
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    }
+
+    .info__wrapper .info__text{
+        order: 1;     
+    }
+
+/* === start of info-2 === */
+
+    .info-2{
+        background:  url('images/bg-section-bottom-mobile-1.svg'), url('images/bg-section-top-mobile-2.svg'), white;
+        background-repeat: no-repeat;
+        background-position: top, bottom;
+        background-size: contain;
+    }
+
+/* === end of info-2 === */
+
+
+/* === end of info === */
+
+/* === start of cta === */
+
+.cta{
+    background: url('images/bg-section-bottom-mobile-2.svg'), url('images/bg-footer-top-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top, bottom;
+}
+/* === end of cta === */
+
+
+
        }
 
    @media screen and (max-width: 550px) {
